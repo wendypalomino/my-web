@@ -1,0 +1,209 @@
+:root{
+    --title-color: #8675A9;
+    --subtitle-color: #808080;
+    --btn-color: #BC4786;
+}
+
+
+nav{
+ display: flex;
+ justify-content: space-between;
+ padding: 10px 40px;
+}
+
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo span{
+    padding-left: 10px;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.top-figure img{
+    position: absolute;
+    left: 40vw;
+    top:0;
+    right: 0;
+    z-index: 100;
+    max-width: 260px;
+}
+
+
+.container-home{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    grid-template-rows: 0.2fr 2fr;
+    grid-template-areas:
+    "nav nav nav"
+    "left center right"
+    "left center right"
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.left{
+    grid-area: left;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dots{
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
+.dots img{
+    height: 140px;
+}
+
+.leftCorner-figure img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    height: 30%;
+}
+
+.center{
+    grid-area:center;
+    display:flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+h1{
+    font-size: 60px;
+    color:var(--subtitle-color);
+}
+
+h1 span{
+    color: var(--title-color);
+}
+
+.btn{
+    background: var(--btn-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 40px;
+}
+
+.circle{
+    align-self: flex-end;
+}
+
+.circle img{
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+}
+
+.right{
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.rombo{
+    margin-top: 10rem;
+    margin-left: 9rem;  
+}
+
+.rombo img{
+    width: 30px;
+    height: 30px;
+}
+
+.background-figure img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    height: 80%;
+}
+
+/*About*/
+
+.container-about{
+ padding: 40px 40px;
+ display: flex;
+ flex-direction: row;
+}
+
+.about{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about-content{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title-about{
+    display: flex;
+    align-items: center;    
+    
+}
+
+.title{
+    color: var(--title-color);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.circle-about img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px ;
+}
+
+.dots-about img{
+    width: 140px;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+
+}
+
+
+.passionate img{
+    width: 400px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%
+}
+
+.content p{
+    margin-bottom: 40px;
+}
+
+
+
