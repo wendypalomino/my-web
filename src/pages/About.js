@@ -1,7 +1,10 @@
 import dotsAbout from '../images/dotsAbout.svg'
-import passionate from '../images/passionate.svg'
+// import passionate from '../images/passionate.svg'
+// import pa from '../images/pa.svg'
+
 import circle from '../images/circle.svg'
 import rombo from '../images/rombo.svg'
+import Passionate from '../components/Passionate'
 
 
 
@@ -18,7 +21,7 @@ export default function About() {
                     <p className="title">About Me</p>
                 </div>
                 <div className="passionate">
-                    <img src={passionate} alt="passionate" />
+                    <Passionate/>
                 </div>
 
             </div>
@@ -44,7 +47,7 @@ export default function About() {
         <div>
         <div className="about">
                 <div className="title-about">
-                    <div className="circle-about">
+                    <div>
                         <img src={circle} alt="circle" />
                     </div>
                     <p className="title">Skills</p>
